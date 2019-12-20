@@ -1,6 +1,6 @@
 #Github Pages
 
-# Futuros projetos com páginas estática.
+# Futuros projetos com página web estática.
 
 - HTML / CSS
 
