@@ -1,0 +1,13 @@
+.primary-button {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: bold;
+  background-color: var(--color-second);
+  border-radius: 4px;
+}
+
+.primary-button.-dark {
+  color: var(--color-base);
+  font-family: 'Bitter', serif;
+}
