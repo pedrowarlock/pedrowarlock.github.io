@@ -37,52 +37,52 @@
         <img src="B_CALC.jpg">
     </a>
 
-    <form action="mailto:Fake_TurismoBrasil@email.com"  style="width: 80%; left:10%; top: 290px; position: absolute;">
+
+    <form action="mailto:fake_turismobrasil@email.com"  method="post" enctype="text/plain" style="width: 80%; left:10%; top: 290px; position: absolute;">
         <fieldset>
             <legend>FORMULÁRIO DE COTAÇÃO</legend>
-            <input type="hidden" name="email" >
 
-                        <input type="radio" id="rad1" name="tipo">
+                        <input type="radio" id="rad1" name="tipo" value="Ida e Volta">
                         <label for="rad1"> Ida e Volta</label>
 
-                        <input type="radio" id="rad2" name="tipo">
+                        <input type="radio" id="rad2" name="tipo" value="Somente ida">
                         <label for="rad2"> Somente ida</label>
                         
-                        <input type="radio" id="rad3" name="tipo">
+                        <input type="radio" id="rad3" name="tipo" value="Vários destinos"> 
                         <label for="rad3"> Vários destinos</label>
 
                         <br><br>
                        
                         <label for="partida"> Saio de: </label>
                         <select name="partida" size="1">
-                            <option value="1">São Paulo
-                            <option value="2">Rio de Janeiro
-                            <option value="3">Brasília
-                            <option value="4">Salvador
-                            <option value="5">Fortaleza
-                            <option value="6">Belo Horizonte
-                            <option value="7">Manaus
-                            <option value="8">Curitiba
-                            <option value="9">Recife
-                            <option value="10">Goiânia
-                            <option value="11">Belém
-                            <option value="12">Porto Alegre
+                            <option value="São Paulo">São Paulo
+                            <option value="Rio de Janeiro">Rio de Janeiro
+                            <option value="Brasília">Brasília
+                            <option value="Salvador">Salvador
+                            <option value="Fortaleza">Fortaleza
+                            <option value="Belo Horizonte">Belo Horizonte
+                            <option value="Manaus">Manaus
+                            <option value="Curitiba">Curitiba
+                            <option value="Recife">Recife
+                            <option value="Goiânia">Goiânia
+                            <option value="Belém">Belém
+                            <option value="Porto Alegre">Porto Alegre
                         </select>
 
                         <label for="chegada"> Viajo para: </label>
                         <select name="chegada" size="1">
-                            <option value="1">São Paulo
-                            <option value="2">Rio de Janeiro
-                            <option value="3">Brasília
-                            <option value="4">Salvador
-                            <option value="5">Fortaleza
-                            <option value="6">Belo Horizonte
-                            <option value="7">Manaus
-                            <option value="8">Curitiba
-                            <option value="9">Recife
-                            <option value="10">Goiânia
-                            <option value="11">Belém
-                            <option value="12">Porto Alegre
+                                <option value="São Paulo">São Paulo
+                                <option value="Rio de Janeiro">Rio de Janeiro
+                                <option value="Brasília">Brasília
+                                <option value="Salvador">Salvador
+                                <option value="Fortaleza">Fortaleza
+                                <option value="Belo Horizonte">Belo Horizonte
+                                <option value="Manaus">Manaus
+                                <option value="Curitiba">Curitiba
+                                <option value="Recife">Recife
+                                <option value="Goiânia">Goiânia
+                                <option value="Belém">Belém
+                                <option value="Porto Alegre">Porto Alegre
                         </select>
 
                         <label for="data1">Data de SAÍDA: </label>
@@ -92,57 +92,56 @@
                         <input type="date" id="data2" name="data2">
 
                         <br><br>
-                        <label for="pessoas"> Pessoas: </label>
-                        <select name="pessoas" size="1">
-                            <option value="1">A partir de 18 anos - 1 pessoa
-                            <option value="2">A partir de 18 anos - 2 pessoas
-                            <option value="3">A partir de 18 anos - 3 pessoas
-                            <option value="4">A partir de 18 anos - 4 pessoas
-                        </select>
-
-                        <label for="pessoas1"> Menor de Idade (GRUPO 1): </label>
+                        <label for="pessoas1"> Pessoas: </label>
                         <select name="pessoas1" size="1">
-                            <option value="1">Não
-                            <option value="2">De 2 à 17 anos - 1 pessoa
-                            <option value="3">De 2 à 17 anos - 2 pessoas
-                            <option value="4">De 2 à 17 anos - 3 pessoas
-                            <option value="5">De 2 à 17 anos - 4 pessoas 
+                            <option value="A partir de 18 anos - 1 pessoa">A partir de 18 anos - 1 pessoa
+                            <option value="A partir de 18 anos - 2 pessoas">A partir de 18 anos - 2 pessoas
+                            <option value="A partir de 18 anos - 3 pessoas">A partir de 18 anos - 3 pessoas
+                            <option value="A partir de 18 anos - 4 pessoas">A partir de 18 anos - 4 pessoas
                         </select>
 
-                        <label for="pessoas2"> Menor de Idade (GRUPO 2): </label>
+                        <label for="pessoas2"> Menor de Idade (GRUPO 1): </label>
                         <select name="pessoas2" size="1">
-                            <option value="1">Não
-                            <option value="2">Menos de 2 anos - 1 pessoa
-                            <option value="3">Menos de 2 anos - 2 pessoas
-                            <option value="4">Menos de 2 anos - 3 pessoas
-                            <option value="5">Menos de 2 anos - 4 pessoas
+                            <option value="Não">Não
+                            <option value="De 2 à 17 anos - 1 pessoa">De 2 à 17 anos - 1 pessoa
+                            <option value="De 2 à 17 anos - 2 pessoas">De 2 à 17 anos - 2 pessoas
+                            <option value="De 2 à 17 anos - 3 pessoas">De 2 à 17 anos - 3 pessoas
+                            <option value="De 2 à 17 anos - 4 pessoas">De 2 à 17 anos - 4 pessoas 
+                        </select>
+
+                        <label for="pessoas3"> Menor de Idade (GRUPO 2): </label>
+                        <select name="pessoas3" size="1">
+                            <option value="Não">Não
+                            <option value="Menos de 2 anos - 1 pessoa">Menos de 2 anos - 1 pessoa
+                            <option value="Menos de 2 anos - 2 pessoas">Menos de 2 anos - 2 pessoas
+                            <option value="Menos de 2 anos - 3 pessoas">Menos de 2 anos - 3 pessoas
+                            <option value="Menos de 2 anos - 4 pessoas">Menos de 2 anos - 4 pessoas
                         </select>
 
                         <br><br>
                         <label for="classe"> Classe: </label>
                         <select name="classe">
-                            <option value="1">Primeira
-                            <option value="2">Executiva
-                            <option value="3">Premium
-                            <option value="4">Econômica
+                            <option value="Primeira">Primeira
+                            <option value="Executiva">Executiva
+                            <option value="Premium">Premium
+                            <option value="Econômica">Econômica
                         </select>
                         <br><br>
                         
-
                         <label for="Nome"> Nome: </label>
-                        <input type="text" id="Nome" name="Nome" size="30" maxlength="100" required>
+                        <input type="text" id="Nome" name="Nome" size="30" maxlength="100" placeholder="digite seu Nome aqui" required>
 
                         <label for="email"> E-mail: </label>
-                        <input type="email" id="email" name="email" size="25" maxlength="100" required>
+                        <input type="email" id="email" name="email" size="25" maxlength="100" placeholder="exemplo@exemplo" required>
 
                         <label for="CPF"> CPF.: </label>
-                        <input type="text" id="CPF" name="CPF" required>
+                        <input type="text" id="CPF" name="CPF" placeholder="000000000-00" required>
 
                         <label for="Tel"> Tel.: </label>
-                        <input type="text" id="Tel" name="Tel" required>
+                        <input type="text" id="Tel" name="Tel" placeholder="(00)00000-0000" required>
 
                         <br><br>
-                        <input type="checkbox" id="check1" checked>
+                        <input type="checkbox" id="check1" name="Receber novidades" checked >
                         <label for="check1"> Desejo receber novidades deste site em meu e-mail.</label>
                         <br><br>
                         <input type="submit" id="botaoEnv" value="Enviar formulário">
