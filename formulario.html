@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>TURISMO BRASIL</title>
+    <script src="jquery-1.11.1.js"></script>
+    <script src="jquery.maskedinput.js"></script>
+</head>
+
+<body style="background-color: #CDCDCD;">
+
+    <div style="text-align:center;">
+        <img src="TURBR.jpg">
+    </div>
+
+    <!-- Separador --> 
+    <hr width = 50%>
+
+    <div style="text-align:center;">
+        <img src="FRASE.jpg">
+    </div>
+
+    <a href="index.html" style="position: absolute; left:22%; top:230px;">
+                    <img src="B_INICIO.jpg"> 
+    </a>
+                
+    <a href="empresa.html" style="position: absolute; left:36%; top:230px;">
+        <img src="B_EMP.jpg">
+    </a>
+
+    <a href="formulario.html"  style="position: absolute; left:51%; top:230px;">
+        <img src="B_FORM.jpg">
+    </a>
+
+    <a href="calculadora.html" style="position: absolute; left:66%; top:230px;">
+        <img src="B_CALC.jpg">
+    </a>
+
+    <form style="width: 80%; left:10%; top: 290px; position: absolute;">
+        <fieldset>
+            <legend>FORMULÁRIO DE COTAÇÃO</legend>
+            <input type="hidden" name="email" value="email@doseudominio">
+
+                        <input type="radio" id="rad1" name="tipo">
+                        <label for="rad1"> Ida e Volta</label>
+
+                        <input type="radio" id="rad2" name="tipo">
+                        <label for="rad2"> Somente ida</label>
+                        
+                        <input type="radio" id="rad3" name="tipo">
+                        <label for="rad3"> Vários destinos</label>
+
+                        <br><br>
+                       
+
+
+                        <label for="partida"> Saio de: </label>
+                        <select name="partida" size="1">
+                            <option value="1">São Paulo
+                            <option value="2">Rio de Janeiro
+                            <option value="3">Brasília
+                            <option value="4">Salvador
+                            <option value="5">Fortaleza
+                            <option value="6">Belo Horizonte
+                            <option value="7">Manaus
+                            <option value="8">Curitiba
+                            <option value="9">Recife
+                            <option value="10">Goiânia
+                            <option value="11">Belém
+                            <option value="12">Porto Alegre
+                        </select>
+
+                        <label for="chegada"> Viajo para: </label>
+                        <select name="chegada" size="1">
+                            <option value="1">São Paulo
+                            <option value="2">Rio de Janeiro
+                            <option value="3">Brasília
+                            <option value="4">Salvador
+                            <option value="5">Fortaleza
+                            <option value="6">Belo Horizonte
+                            <option value="7">Manaus
+                            <option value="8">Curitiba
+                            <option value="9">Recife
+                            <option value="10">Goiânia
+                            <option value="11">Belém
+                            <option value="12">Porto Alegre
+                        </select>
+
+                        <label for="data1">Data de SAÍDA: </label>
+                        <input type="date" id="data1" name="data1">
+
+                        <label for="data2">Data de RETORNO: </label>
+                        <input type="date" id="data2" name="data2">
+
+                        <br><br>
+                        <label for="pessoas"> Pessoas: </label>
+                        <select name="pessoas" size="1">
+                            <option value="1">A partir de 18 anos - 1 pessoa
+                            <option value="2">A partir de 18 anos - 2 pessoas
+                            <option value="3">A partir de 18 anos - 3 pessoas
+                            <option value="4">A partir de 18 anos - 4 pessoas
+                        </select>
+
+                        <label for="pessoas1"> Menor de Idade (GRUPO 1): </label>
+                        <select name="pessoas1" size="1">
+                            <option value="1">Não
+                            <option value="2">De 2 à 17 anos - 1 pessoa
+                            <option value="3">De 2 à 17 anos - 2 pessoas
+                            <option value="4">De 2 à 17 anos - 3 pessoas
+                            <option value="5">De 2 à 17 anos - 4 pessoas 
+                        </select>
+
+                        <label for="pessoas2"> Menor de Idade (GRUPO 2): </label>
+                        <select name="pessoas2" size="1">
+                            <option value="1">Não
+                            <option value="2">Menos de 2 anos - 1 pessoa
+                            <option value="3">Menos de 2 anos - 2 pessoas
+                            <option value="4">Menos de 2 anos - 3 pessoas
+                            <option value="5">Menos de 2 anos - 4 pessoas
+                        </select>
+
+                        <br><br>
+                        <label for="classe"> Classe: </label>
+                        <select name="classe">
+                            <option value="1">Primeira
+                            <option value="2">Executiva
+                            <option value="3">Premium
+                            <option value="4">Econômica
+                        </select>
+                        <br><br>
+                        
+
+                        <label for="Nome"> Nome: </label>
+                        <input type="text" id="Nome" name="Nome" size="30" maxlength="100" required>
+
+                        <label for="email"> E-mail: </label>
+                        <input type="email" id="email" name="email" size="25" maxlength="100" required>
+
+                        <label for="CPF"> CPF.: </label>
+                        <input type="text" id="CPF" name="CPF" required>
+
+                        <label for="Tel"> Tel.: </label>
+                        <input type="text" id="Tel" name="Tel" required>
+
+                        <br><br>
+                        <input type="checkbox" id="check1" checked>
+                        <label for="check1"> Desejo receber novidades deste site em meu e-mail.</label>
+                        <br><br>
+                        <input type="submit" id="botaoEnv" value="Enviar formulário">
+                        <br><br>
+                        <input type="reset" value="Apagar tudo">
+      
+    
+
+        </fieldset>
+    </form>
+
+<script>
+    jQuery(function($)
+    {
+        $("#CPF").mask("999999999-99");
+        $("#Tel").mask("(99)99999-9999");
+    });
+
+</script>
+
+    </body>
+</html>
