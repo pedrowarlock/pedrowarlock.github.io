@@ -1,46 +1,185 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="NES.css is a NES-style CSS Framework." />
+    <meta name="keywords" content="html5,css,framework,sass,NES,8bit" />
+    <meta name="theme-color" content="#212529"/>
+    <link rel="shortcut icon" type="image/png" href=".\imgs\graduation.png">
+    <link rel="shortcut icon" sizes="196x196" href=".\imgs\graduation.png">
+    <link rel="apple-touch-icon" href=".\imgs\graduation.png">
 
-<head>
-    <meta charset="UTF-8">
-    <title>TURISMO BRASIL</title>
-</head>
+    <title>Portfolio : Pedro A. Pinheiro</title>
 
-<body style="background-color: #CDCDCD;">
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet" />
+    <link href="./style.css" rel="stylesheet" />
+    <link href="./style2.css" rel="stylesheet" />
 
-    <div style="text-align:center;">
-        <img src=".\imgs\TURBR.jpg">
-    </div>
+    <script src="./lib/vue.min.js"></script>
 
-    <!-- Separador --> 
-    <hr width = 50%>
+    <script src="./lib/dialog-polyfill.js"></script>
+    <script src="./lib/highlight.js"></script>
 
-    <div style="text-align:center;">
-        <img src=".\imgs\FRASE.jpg">
-    </div>
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="NES.css" />
+    <meta property="og:url" content="http://pedrowarlock.github.io/" />
 
-    <a href="index.html" style="position: absolute; left:22%; top:230px;">
-                    <img src=".\imgs\B_INICIO.jpg"> 
-    </a>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
+    <script>
+      if (window.navigator.userAgent.toLocaleLowerCase().indexOf('trident') !== -1) {
+        window.alert('IE não é suportado pela página.')
+      }
+
+    </script>
+  </head>
+
+  <body>
+    <div id="nescss">
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="http://pedrowarlock.github.io/">
+              <h2><img src=".\imgs\graduation.png" class="brand-logo" width="60" height="40">Pedrowarlock.github.io</h2>
+            </a>
+            <p>Pedro A. Pinheiro Soares</p>
+          </div>
+
+          <div class="social-buttons">
+            <p style="text-align: center;">Minhas Redes</p>
+            <div class="share">
+              <a href="https://twitter.com/Gato_Estrabico" target="_blank"><i class="nes-icon twitter"></i></a>
+              <a href="https://www.facebook.com/PedroWarlock" target="_blank"><i class="nes-icon facebook"></i></a>
+              <a href="https://www.linkedin.com/in/pedropinheiro000/" target="_blank"><i class="nes-icon linkedin"></i></a>
+              <a href="https://github.com/pedrowarlock" target="_blank"><i class="nes-icon github"></i></a>
+              <a href="https://www.youtube.com/Canal8bitsBr" target="_blank"><i class="nes-icon youtube"></i></a>
+              <a href="https://www.instagram.com/pedro_warlock/" target="_blank"><i class="nes-icon instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=5521965465094" target="_blank"><i class="nes-icon whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="container">
+        <main class="main-content">
+
+          <!-- Sobre -->
+          <section class="topic">
+            <h2 id="about"><a href="#about">#</a>SOBRE<img src=".\imgs\person.png" class="brand-logo" width="40" height="40" style="padding-bottom: 8px; margin-left: 0px;"></h2>
+            <div class="nes-container is-rounded">
+
+              <img src=".\imgs\pedro.jpg" width="170" height="174" style="float: left; border-radius: 100px; margin: 30px;">
+              <h3>Nome: Pedro Antaris Pinheiro Soares</h3>
+              <h3>Idade: 28 anos</h3>
+              <br>
+              <div style="text-align: justify;">
+                - Olá, meu nome é Pedro e vou contar uma breve história sobre o meu percurso no ramo de desenvolvedor. 
+                Tecnicamente eu estou em contato com computadores desde a infância quando minha mãe me apresentou a um computadores 
+                no trabalho dela, aquilo mudou totalmente a minha vida, eu comecei explorar a minha curiosidade. Com 15 anos em meados
+                de 2005 eu finalmente consegui o meu primeiro, um computador com um processador Pentium MMX e Windows 98 foi a partir 
+                daí que eu comecei a explorar tudo que envolvia hardware e software, isso me parecia um sonho já que eu era um garoto 
+                bem curioso (Meus brinquedos viviam desmontado, a curiosidade era maior do que brincar).
+              </div>
+            </p>
+          </div>
+          </section>
+         
+          <!-- formação -->
+          <section class="topic">
+            <h2 id="installation"><a href="#installation">#</a>FORMAÇÃO<img src=".\imgs\graduation.png" class="brand-logo" width="40" height="35" style="padding-bottom: 8px; margin-left: 7px;"></h2>
+            <div class="nes-container is-rounded"  style="text-align: justify;">
+              <p>- Atualmente cursando o segundo periodo em ciência da computação na faculdade UEZO, em campo grande no Rio de janeiro.</p>
+              <br>
+              <p>- Estou constantemente participando de diversos cursos online e possuo diversos certificados online.</p>
+              <br>
+              <p>- Cursou desenvolvimento web backend e frontend no curso Educafro no ano de 2020 (C# e JavaScript).</p>
+              <br>
+              <p>- Cursou na plataforma digital fundação Bradesco (HTML, CSS, JavaScript).</p>
+              <br>
+              <p>- Cursou na plataforma digital Curso Em Video (HTML, CSS, JavaScript, Orientado a objeto em PHP, 
+                   Java, PHP, Python, Git, Github, Respberry Pi, Redes de Computadores, 
+                   Lógica de programação, banco de dados com MySQL).</p>
+            </div>
+          </section> 
+
+                    <!-- PROJETOS -->
+                    <section class="topic">
+                      <h2 id="installation"><a href="#installation">#</a>PROJETOS<img src=".\imgs\graduation.png" class="brand-logo" width="40" height="35" style="padding-bottom: 8px; margin-left: 7px;"></h2>
+                      <div class="nes-container is-rounded"  style="text-align: justify;">
+                        <p> <img src=".\imgs\dialog_warning.png" width="30px" height="30px"> - No momento pela alta demanda da faculdade, não estou iniciando novos projetos, mas permaneço acompanhando os meus 
+                          antigos publicados no github, o andamento dos projetos está fluindo com base das doações da comunidade. Me siga no github para
+                        acompanhar minhas publicações.</p>
+                       
+
+                      <section class="nes-container is-dark " style="text-align: left;"> 
+                        <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://camo.githubusercontent.com/3aab96905fcbff8fe81906720362c25dbd79bee1/68747470733a2f2f696d6775722e636f6d2f6e5435394a51372e706e67" width="400" height="300">
+                        <h3 >Advanced Menu Comercial</h3>
+                        <br><br>
+                        <p> - Um projeto iniciado em 2011 com o intuito de aprender a programar em C++ e Autoit e facilitar 
+                          a utilização de sistemas Arcades.
+                           - Eu vi uma dificuldade em donos de maquinas de fliperama em gerenciar suas maquinas, com base na 
+                          demanda dos locais e do tipo de jogo alvo do público em geral.
+                          - O projeto consiste em tormar uma maquina de Arcade em Multi-Arcade, assim aumentando
+                          Significativamente sua quantidade de jogos de 1 jogo, para uma quantidade 
+                          gigantesca de jogos, assim articulando o tipo de maquina arcade e abrindo um leque de jogos 
+                          para a comunidade que utiliza esses tipos de maquina, assim acabando com a limitação do console.
+                          - O sistema foi desenvolvido em cima do código aberto do <a href="https://www.advancemame.it/menu-readme.html" target="_blank">Advanced Menu</a> e adaptado para funcionar
+                          com sistema de cobrança.
+                          
+                          <br><br>
+                          <a href="https://github.com/pedrowarlock/advmenuPlus-PedroWarlock-comercial-system" target="_blank">
+                            <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                          </a>
+                      
+                          <br><br>
+                        </p>
+                        </section> 
+
+
+                        <section class="nes-container is-dark " style="text-align: left;"> 
+                          <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://camo.githubusercontent.com/bfe8612a95f5d677c2f6c58aa92326fdc4b2fa63/68747470733a2f2f696d6775722e636f6d2f4f524e537970722e706e67" width="400" height="300">
+                          <h3>PandoraBox 3</h3>
+                          <br><br>
+                          <p> - 
+                            
+                            <br><br>
+                            <a href="https://github.com/pedrowarlock/advmenuPlus-PedroWarlock-comercial-system" target="_blank">
+                              <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                            </a>
+                        
+                            <br><br>
+                          </p>
+                          </section> 
+
                 
-    <a href=".\pages\empresa.html" style="position: absolute; left:36%; top:230px;">
-        <img src=".\imgs\B_EMP.jpg">
-    </a>
 
-    <a href=".\pages\formulario.html"  style="position: absolute; left:51%; top:230px;">
-        <img src=".\imgs\B_FORM.jpg">
-    </a>
+        </main>
 
-    <a href=".\pages\calculadora.html" style="position: absolute; left:66%; top:230px;">
-        <img src=".\imgs\B_CALC.jpg">
-    </a>
-    
+        <footer>
+          <p>
+            <span>&copy;2020</span>
+            <a href="https://www.facebook.com/PedroWarlock" target="_blank" rel="noopener">Site desenvolvido por Pedro Pinheiro</a>
+            <span>-</span>
+            <a href="https://www.instagram.com/pedro_warlock/" target="_blank" rel="noopener">@pedro_warlock</a>
+          </p>
+        </footer>
 
-    <img src=".\imgs\C_AV_ONIB.jpg"  style="position: absolute; left:23%; top:320px;">
-
-
-
-
-
-</body>
+        <!-- Botão Subir -->
+        <button type="button" class="nes-btn is-error scroll-btn" :class="{ active: scrollPos > 200 }" @click="window.scrollTo({ top:0, behavior: 'smooth' })"><span>&lt;</span></button>
+      </div>
+    </div>
+  </body>
+  
+  <script src="./script.js"></script>
+  <script>
+    const h = document.querySelector('head');
+    ['./lib/dialog-polyfill.css', './lib/highlight-theme.css'].forEach(a => {
+      const l = document.createElement('link');
+      l.href = a;
+      l.rel = 'stylesheet';
+      h.appendChild(l);
+    })
+  </script>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href=".\css\estilo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<script>
+  function Set_Active(a){
+    var items = ['sobreID', 'projetosID', 'formacaoID', 'contatoID'];
+    for(var i = 0;i <= items.length - 1;i++) {
+      if (a == items[i]){
+        document.getElementById(a).classList.add('active');
+      }else{
+        document.getElementById(items[i]).classList.remove('active');
+      }
+    }
+  }
+  
+
+</script>
+
+<div class="navbar">
+  <a href="#cartao_sobre"    id="sobreID" onclick="Set_Active('sobreID')" ><i class="fa fa-fw fa-user"></i> Sobre</a>
+  <a href="#cartao_projetos" id="projetosID" onclick="Set_Active('projetosID')"><i class="fa fa-briefcase"></i> Projetos</a>
+  <a href="#cartao_formacao" id="formacaoID" onclick="Set_Active('formacaoID')"><i class="fa fa-graduation-cap"></i> Formação</a>
+  <a href="#cartao_contato"  id="contatoID" onclick="Set_Active('contatoID')"><i class="fa fa-id-card"></i> Contato</a>
+
+    <!-- <div class="topnav-right">
+      <a href="#" class="whats"><img src=".\imgs\whats.png" width="50" height="50"></a>
+    </div> -->
+  </div>
+
+  <div class="cartao_sobre cartao" id="cartao_sobre">
+      
+        <table>         
+          <tr>
+            
+            <td>
+              <img src=".\imgs\pedro.jpg" width="140" height="144">
+            </td>
+
+             <td>
+               <p>
+                 <span style="color: bisque;">Nome:</span> Pedro A. Pinheiro Soares <br>
+                 <span style="color: bisque;">Idade:</span> 28 anos
+               </p>
+             </td>
+             
+          </tr>
+        </table>
+      
+        <div class="sobre_texto" >
+          Olá, meu nome é Pedro e vou contar uma breve história sobre o meu percurso no ramo de desenvolvedor. 
+          Tecnicamente eu estou em contato com computadores desde a infância quando minha mãe me apresentou a um computadores 
+          no trabalho dela, aquilo mudou totalmente a minha vida, eu comecei explorar a minha curiosidade. Com 15 anos em meados
+          de 2005 eu finalmente consegui o meu primeiro, um computador com um processador Pentium MMX e Windows 98 foi a partir 
+          daí que eu comecei a explorar tudo que envolvia hardware e software, isso me parecia um sonho já que eu era um garoto 
+          bem curioso (Meus brinquedos viviam desmontado, a curiosidade era maior do que brincar).
+        </div>
+    </div>
+
+    <div class="cartao_projetos cartao" id="cartao_projetos">
+      </div>
+  
+      <div class="cartao_formacao cartao" id="cartao_formacao">
+      </div>
+
+      <div class="cartao_contato cartao" id="cartao_contato">
+      </div>
+    
+      
+  </body>
+
+
+</html>
