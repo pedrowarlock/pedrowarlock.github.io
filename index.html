@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Pedro A. Pinheiro Soares">
+    <meta name="keywords" content="html5,css,framework,sass,NES,8bit">
+    <meta name="theme-color" content="#212529">
+    <link rel="shortcut icon" type="image/png" href="./imgs/graduation.png"/>
+    <link rel="shortcut icon" sizes="196x196" href="./imgs/graduation.png">
+    <link rel="apple-touch-icon" href="./imgs/graduation.png">
+
+    <title>Pedro A. Pinheiro</title>
+
+    <!-- Alterada do NES -->
+    <link href="./css/nes.min.css" rel="stylesheet">
+
+    <!-- PADRÃO DA PAGINA -->
+    <link href="./style.css" rel="stylesheet">
+
+    <script src="./lib/vue.min.js"></script>
+    <script src="./lib/dialog-polyfill.js"></script>
+    <script src="./lib/highlight.js"></script>
+
+    <!-- TUMB -->
+    <meta property="og:locale" content="pt_br">
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Pedro A. Pinheiro" />
+    <meta property="og:url" content="http://pedrowarlock.github.io/" />
+    <meta property="og:image" content="https://avatars3.githubusercontent.com/u/2616950?s=460&u=950a8daee24cee6ec38ae7dde9f014a39d1d433d&v=4.png">
+    <meta property="og:description" content="Site portifólio do Pedro A. Pinheiro Soares, uma breve descrição do seu conteúdo acadêmico.">
+    <!--  -->
+    
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-41640153-4"></script>
+    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag("js", new Date());gtag("config", "UA-41640153-4");</script>
+    <script>
+      if (window.navigator.userAgent.toLocaleLowerCase().indexOf('trident') !== -1) {
+        window.alert('IE não é suportado pela página.')
+      }
+
+    </script>
+
+
+    
+  </head>
+
+  <body>
+    <div id="nescss">
+
+      <!-- NAV BAR -->
+      <header :class="{ sticky: scrollPos > 50 }">
+        <div class="container">
+          <div class="nav-brand">
+            <a href="http://pedrowarlock.github.io/">
+              <h2><img src=".\imgs\graduation.png" alt="" class="brand-logo" width="60" height="40">Pedrowarlock.github.io</h2>
+            </a>
+            <p>Pedro A. Pinheiro Soares</p>
+          </div>
+
+          <div class="social-buttons">
+            <p style="text-align: center;">Minhas Redes</p>
+            <div class="share">
+              <a href="https://twitter.com/Gato_Estrabico" target="_blank"><i class="nes-icon twitter"></i></a>
+              <a href="https://www.facebook.com/PedroWarlock" target="_blank"><i class="nes-icon facebook"></i></a>
+              <a href="https://www.linkedin.com/in/pedropinheiro000/" target="_blank"><i class="nes-icon linkedin"></i></a>
+              <a href="https://github.com/pedrowarlock" target="_blank"><i class="nes-icon github"></i></a>
+              <a href="https://www.youtube.com/Canal8bitsBr" target="_blank"><i class="nes-icon youtube"></i></a>
+              <a href="https://www.instagram.com/pedro_warlock/" target="_blank"><i class="nes-icon instagram"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=5521965465094" target="_blank"><i class="nes-icon whatsapp"></i></a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!--  -->
+
+      <!-- POSTAGENS -->
+      <div class="container">
+        <main class="main-content">
+
+          <!-- Sobre -->
+          <section class="topic">
+ 
+            <!-- PERFIL -->
+            <h2 id="about"><a href="#about">#</a>SOBRE<img src="./imgs/person.png" alt="" class="brand-logo" width="40" height="40" style="padding-bottom: 8px; margin-left: 0px;"></h2>
+            <!-- borda arredondada -->
+            
+              <div class="nes-container is-rounded">
+                  <!-- imagem de perfil -->
+                  <img src="./imgs/pedro.jpg" alt="" width="170" height="174" style="float: left; border-radius: 100px; margin: 30px;">
+                  <!-- Descrições do perfil -->
+                  <h3>Nome: Pedro Antaris Pinheiro Soares</h3>
+                  <h3>Idade: 28 anos</h3>
+                  <br>
+                  <div style="text-align: justify;">
+                    - Olá, meu nome é Pedro e vou contar uma breve história sobre o meu percurso no ramo de desenvolvedor. 
+                    Tecnicamente eu estou em contato com computadores desde a infância quando minha mãe me apresentou a um computadores 
+                    no trabalho dela, aquilo mudou totalmente a minha vida, eu comecei explorar a minha curiosidade. Com 15 anos em meados
+                    de 2005 eu finalmente consegui o meu primeiro, um computador com um processador Pentium MMX e Windows 98 foi a partir 
+                    daí que eu comecei a explorar tudo que envolvia hardware e software, isso me parecia um sonho já que eu era um garoto 
+                    bem curioso (Meus brinquedos viviam desmontado, a curiosidade era maior do que brincar).
+                  </div>
+              </div>            
+          </section>
+         
+          <!-- formação -->
+          <section class="topic">
+            <h2 id="installation"><a href="#installation">#</a>FORMAÇÃO<img src="./imgs/graduation.png" alt="" class="brand-logo" width="40" height="35" style="padding-bottom: 8px; margin-left: 7px;"></h2>
+            <div class="nes-container is-rounded "  style="text-align: justify;">
+              <ul class="nes-list is-disc">
+                  <li>Atualmente cursando o segundo período em ciência da computação na faculdade UEZO, em campo grande no Rio de janeiro.</li><br>
+                  
+                  <li>Estou constantemente participando de diversos cursos online e possuo diversos certificados online.</li><br>
+                  
+                  <li>Cursou desenvolvimento web backend e frontend no curso Educafro no ano de 2020 (C# e JavaScript).</li><br>
+                  
+                  <li>Cursou na plataforma digital fundação Bradesco (HTML, CSS, JavaScript).</li><br>
+                  
+                  <li>Cursou na plataforma digital Curso Em Video (HTML, CSS, JavaScript, Orientado a objeto em PHP, 
+                    Java, PHP, Python, Git, Github, Respberry Pi, Redes de Computadores, 
+                    Lógica de programação, banco de dados com MySQL).</li>
+                </ul>
+            </div>
+          </section> 
+          <!-- FIM formação -->
+
+
+        <!-- PROJETOS  TÓPICOS -->
+        <section class="topic">
+        <h2 id="installation"><a href="#installation">#</a>PROJETOS<img src="./imgs/my_briefcase.png" alt="" class="brand-logo" width="35" height="40" style="padding-bottom: 8px; margin-left: 7px;"></h2>
+        <div class="nes-container is-rounded"  style="text-align: justify;">
+
+                <!-- AVISO -->
+                <p> <img src="./imgs/dialog_warning.png" alt="" width="30px" height="30px" alt=""> - No momento pela alta demanda da faculdade, não estou iniciando novos projetos, mas permaneço acompanhando os meus 
+                antigos publicados no github, o andamento dos projetos está fluindo com base das doações da comunidade. Me siga no github para
+                acompanhar minhas atualizações.</p>
+
+
+
+
+                <section class="nes-container is-dark " style="text-align: left;"> 
+                <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://camo.githubusercontent.com/3aab96905fcbff8fe81906720362c25dbd79bee1/68747470733a2f2f696d6775722e636f6d2f6e5435394a51372e706e67" width="400" height="300">
+                <h4 style="text-align: center;">Advanced Menu Comercial </h4>
+                <br><br>
+                <p> - Um projeto iniciado em 2011 com o intuito de aprender a programar em C++ e Autoit e facilitar 
+                a utilização de sistemas Arcades.
+                - Eu vi uma dificuldade em donos de maquinas de fliperama em gerenciar suas maquinas, com base na 
+                demanda dos locais e do tipo de jogo alvo do público em geral.
+                - O projeto consiste em tormar uma maquina de Arcade em Multi-Arcade, assim aumentando
+                Significativamente sua quantidade de jogos de 1 jogo, para uma quantidade 
+                gigantesca de jogos, assim articulando o tipo de maquina arcade e abrindo um leque de jogos 
+                para a comunidade que utiliza esses tipos de maquina, assim acabando com a limitação do console.
+                - O sistema foi desenvolvido em cima do código aberto do <a href="https://www.advancemame.it/menu-readme.html" target="_blank">Advanced Menu</a> e adaptado para funcionar
+                com sistema de cobrança..
+                </p>
+                <br><br>
+                <a href="https://github.com/pedrowarlock/advmenuPlus-PedroWarlock-comercial-system" target="_blank">
+                <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                </a> 
+                <div class="nes-badge"><span class="is-primary">C++</span></div>
+                <div class="nes-badge"><span class="is-warning">AUTOIT</span></div>                
+                <br><br>
+                </section> 
+                <br>
+
+
+                <!-- Pandora Box 3 -->
+                <section class="nes-container is-dark " style="text-align: left;"> 
+                <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://camo.githubusercontent.com/bfe8612a95f5d677c2f6c58aa92326fdc4b2fa63/68747470733a2f2f696d6775722e636f6d2f4f524e537970722e706e67" width="400" height="300">
+                <h4 style="text-align: center;">Pandora's Box 3</h4>
+                <br><br>
+                <p> - Um projeto iniciado para refazer do zero o projeto anterior. Basicamente foi removido
+                as dependências  desse antigo projeto em C++ e refeito todo em linguagem <a href="https://www.autoitscript.com/site/" target="_blank">Autoit</a>.
+                O projeto pandora's Box é uma replica visual do sistema Chinês "Pandora's Box" de código fechado. Projeto inicialmente desenvolvido para diversão e aprendizagem.
+                <br><br>
+                <a href="https://github.com/pedrowarlock/PandoraBox3-WindowsVersion" target="_blank">
+                <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                </a> 
+                <div class="nes-badge"><span class="is-warning">AUTOIT</span></div>                    
+                <br><br>
+                </section> 
+                <br>
+
+                <!-- AFRO ARTE SITE -->
+                <section class="nes-container is-dark " style="text-align: left;"> 
+                <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://imgur.com/SFBy8Oa.png" width="400" height="300" alt="">
+                <h4 style="text-align: center;">Site Afro Arte</h4>
+                <br><br>
+                <p> - Uma loja virtual desenvolvida durante aulas na sede da <a href="https://www.educafro.org.br/site/" target="_blank"> Educafro</a> em São Paulo. 
+                A ideia é exibir roupas para o público afro, assim divulgando marcas de cultura africana.
+
+                <br><br>
+                <a href="https://github.com/pedrowarlock/PandoraBox3-WindowsVersion" target="_blank">
+                <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                </a>
+                <div class="nes-badge is-splited">
+                <span class="is-warning">HTML</span>
+                <span class="is-primary">CSS</span>
+                </div>   
+
+                <div class="nes-badge"><span class="is-error">JavaScript</span></div>   
+                <br>
+                </section> 
+                <br>
+
+
+                <!-- AFRO ARTE LOJA -->
+                <section class="nes-container is-dark " style="text-align: left;"> 
+                <img style="border: 3px solid #555; float: left; margin-right: 25px; margin-bottom: 25px;" src="https://imgur.com/LLXza0N.png" width="400" height="300" alt="">
+                <h4 style="text-align: center;">Afro Arte</h4>
+                <br><br>
+                <p> - Seguindo a linha de loja do projeto anterior, esse foi totalmente desenvolvido em C#. Foi seguido o
+                estilo de loja de comércio físico. A característica é totalmente baseada em caixas de supermercados.
+                E seu conteúdo comercial segue o banco de dados da loja virtual, com gerenciamento de estoque, formatação
+                de nota fiscal, registro de produtos, registro de clientes, impressão de nota fiscal e leitor de código de barras. 
+
+                <br><br>
+                <a href="https://github.com/pedrowarlock/Sistema-De-Loja-EducafroTech" target="_blank">
+                <button style="float: right;" type="button" class="nes-btn is-success">Abrir Projeto ></button>
+                </a>
+                <div class="nes-badge"><span class="is-primary">C#</span></div>
+                <br>
+                </section> 
+                <br>
+
+
+
+      </div>  <!-- Fim do tópicos  -->
+        </main>
+        <footer>
+          <p>
+            <span>&copy;2020</span>
+            <a href="https://www.facebook.com/PedroWarlock" target="_blank" rel="noopener">Site desenvolvido por Pedro Pinheiro</a>
+            <span>-</span>
+            <a href="https://www.instagram.com/pedro_warlock/" target="_blank" rel="noopener">@pedro_warlock</a>
+          </p>
+        </footer>
+
+        <!-- Botão Subir -->
+          <button type="button" class="nes-btn is-error scroll-btn" :class="{ active: scrollPos > 500 }" @click="window.scrollTo({ top:0, behavior: 'smooth' })"><span>&lt;</span></button>
+      </div>
+    </div>
+  </body>
+  
+
+  <script src="./script.js"></script>
+  <script>
+    const h = document.querySelector('head');
+    ['./lib/dialog-polyfill.css', './lib/highlight-theme.css'].forEach(a => {
+      const l = document.createElement('link');
+      l.href = a;
+      l.rel = 'stylesheet';
+      h.appendChild(l);
+    })
+  </script>
+</html>
